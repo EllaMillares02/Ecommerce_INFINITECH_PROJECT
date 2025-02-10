@@ -1,0 +1,54 @@
+.delivery-box {
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    position: relative;
+    background-color: white;
+}
+.arrow {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid green; /* Arrow color */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px; /* Position below the box */
+}
+.no-arrow {
+    display: none; /* Hide the arrow for the last order */
+}
+.section-title {
+    font-size: 1.5rem;
+    color: green;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.btn-view-details {
+    display: block; /* Block display for full width */
+    margin-top: 10px; /* Space above button */
+    text-align: center; /* Center text */
+    color: white;
+}
+.order-details {
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.section-title {
+    font-size: 1.5rem;
+    color: green;
+    margin-bottom: 10px;
+}
+.btn-upload {
+    margin-top: 10px;
+    margin-right: 10px; /* Space between buttons */
+}
+.btn-cancel {
+    margin-top: 10px;
+}
