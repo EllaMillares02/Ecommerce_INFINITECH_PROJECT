@@ -170,7 +170,7 @@
                                 use Carbon\Carbon;
                             @endphp
                         
-                        @foreach ($product as $product)
+                        @forelse ($product as $product)
                             @foreach ($product->flavors as $flavor)
                                 @foreach ($product->sizes as $size)
                                     @if ($size->flavor_id == $flavor->id)
@@ -215,7 +215,14 @@
                                     @endif
                                 @endforeach
                             @endforeach
-                    @endforeach
+                        @empty
+                            <tr>
+                                <td colspan="13" class="text-center">
+                                    <i class="fa fa-truck" style="font-size: 24px; color: grey;" title="No deliveries available"></i>
+                                    <p>No out of stock products at the moment.</p>
+                                </td>
+                            </tr>
+                        @endforelse
 
                         </table>
 
